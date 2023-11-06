@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {
+
+                    let right = document.querySelector(".right");
+                    right.addEventListener('click', function(event) {
+                        right.style.backgroundColor = 'green';
+                        document.querySelector("#firstFeedback").innerHTML = "Right!";
+                    });
+
+                    let wrong = document.querySelectorAll(".wrong");
+                    for (let i = 0; i < wrong.length; i++)
+                    {
+                        wrong[i].addEventListener('click', function(event) {
+                            wrong[i].style.backgroundColor = 'red';
+                            document.querySelector("#firstFeedback").innerHTML = "Wrong!";
+                        })
+                    }
+
+                    document.querySelector('#check').addEventListener('click', function() {
+                        let answer = document.querySelector('input');
+
+                        if (answer.value == 'heading' || answer.value == 'Heading' || answer.value == 'HEADING')
+                        {
+                            answer.style.backgroundColor = 'green';
+                            document.querySelector('#secondFeedback').innerHTML = 'Right!';
+                        }
+                        else {
+                            answer.style.backgroundColor = 'red';
+                            document.querySelector('#secondFeedback').innerHTML = 'Wrong!';
+                        }
+                    });
+                });
+            </script>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <h3>What language is used for design in Web Dev?</h3>
+                <button class="wrong">HTML</button>
+                <button class="wrong">C#</button>
+                <button class="right">CSS</button>
+                <button class="wrong">JavaScript</button>
+
+                <p id = "firstFeedback"></p>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <h3>What is the "H" tag used for in HTML?</h3>
+                <input type="text"></input>
+                <button id = "check">Check Answer!</button>
+
+                <p id = "secondFeedback"></p>
+            </div>
+        </div>
+    </body>
+</html>
