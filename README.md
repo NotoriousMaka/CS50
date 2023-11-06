@@ -1,4 +1,4 @@
-# <strong>Harvard`s CS50 Course</strong>
+# Harvard`s CS50 Course
 
 ## 📖 Description of Harvard`s CS50 - Introduction to Computer Science Course
 
