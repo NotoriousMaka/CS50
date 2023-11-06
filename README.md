@@ -1,6 +1,5 @@
 # CS50
 
 ## Description of Harvard`s CS50 - Introduction to Computer Science Course
-<p> This folder contains multiple small programs that I have developed during the CS50`s Harvard course. </br>
-They contain different languages, from SQL to C, Python, HTML, CSS & JavaScript. </br>
-It also includes some libraries such as Bootstrap for easier HTML development. </p>
+
+<p>An entry-level course taught by David J. Malan, CS50x teaches students how to think algorithmically and solve problems efficiently.</br> Topics include abstraction, algorithms, data structures, encapsulation, resource management, security, software engineering, and web development. Languages include C, Python, SQL, and JavaScript plus CSS and HTML. </br> Problem sets inspired by real-world domains of biology, cryptography, finance, forensics, and gaming. The on-campus version of CS50x , CS50, is Harvard's largest course. </p>
