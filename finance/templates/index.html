@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+{% extends "layout.html" %}
+
+{% block title %}
+    Buy Page
+{% endblock %}
+
+{% block main %}
+    <html>
+        <head>
+            <style>
+                h1 {
+                    text-align: center;
+                }
+
+                table {
+                    width: 80%;
+                    margin: 0 auto;
+                    border-collapse: collapse;
+                }
+
+                th, td {
+                    padding: 10px;
+                    text-align: left;
+                }
+
+                th {
+                    background-color: #f2f2f2;
+                }
+
+                tr:nth-child(even) {
+                    background-color: #f2f2f2;
+                }
+
+                tr:hover {
+                    background-color: #dcdcdc;
+                }
+
+                td:nth-child(1) {
+                    text-align: right;
+                }
+            </style>
+        </head>
+        <body>
+            <h1>Stocks Portfolio</h1>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Symbol</th>
+                        <th>Name</th>
+                        <th>Shares</th>
+                        <th>Price</th>
+                        <th>Total Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for stock in stocks %}
+                        <tr>
+                            <td>{{ stock.symbol }}</td>
+                            <td>{{ stock.name }}</td>
+                            <td>{{ stock.total_shares }}</td>
+                            <td>${{ stock.price }}</td>
+                            <td>${{ stock.price * stock.total_shares }}</td>
+                        </tr>
+                    {% endfor %}
+                    <tr>
+                        <td colspan="4" align="right">Cash</td>
+                        <td>${{ cash }}</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" align="right">Total Value</td>
+                        <td>${{ total_value }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </body>
+    </html>
+{% endblock %}

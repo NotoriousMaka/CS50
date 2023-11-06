@@ -1,0 +1,62 @@
+body {
+    background-image: url("/images/purple-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+  }
+
+.navbar {
+    background-color: transparent;
+    backdrop-filter: blur(5px); /* Adds a subtle blur effect to the background */
+}
+
+.navbar .navbar-brand {
+    color: white; /* Text color */
+    background-color: transparent; /* Background color (transparent) */
+    border: none; /* Remove borders if needed */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.navbar .nav-link,
+.navbar .btn {
+    color: white; /* Text color */
+    background-color: transparent; /* Background color (transparent) */
+    border: none; /* Remove borders if needed */
+    padding: 0; /* Reset padding */
+    width: 300px; /* Set a fixed width for all buttons */
+    height: 50px; /* Set a fixed height for all buttons */
+    text-align: center; /* Center the text in the circle */
+    text-decoration: none; /* Remove underline from links */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-size 1s; /* Add a transition effect for background size */
+}
+
+.navbar .nav-link.active,
+.navbar .btn {
+    color: white; /* Text color */
+    background-color: transparent; /* Background color (transparent) */
+    border: none; /* Remove borders if needed */
+    text-align: center; /* Center the text in the circle */
+    text-decoration: none; /* Remove underline from links */
+}
+
+  /* Style the navigation links and buttons on hover */
+.navbar .nav-link:hover,
+.navbar .btn:hover {
+    color: white; /* Text color on hover */
+    background-color: #313866; /* Background color on hover (transparent) */
+    background-size: 200%;
+}
+
+.navbar .nav-brand:hover,
+.navbar .btn:hover {
+    color: white; /* Text color on hover */
+    background-color: #313866; /* Background color on hover (transparent) */
+}
+
+.navbar-toggler {
+    color: #313866;
+}
