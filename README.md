@@ -13,6 +13,6 @@
 
 <ul>
   <li>I have created codes that vary in length and complexity using a multitude of programming languages, which were listed above.</li>
-  <li>One of the tasks I have done is a start of a larger project, "<strong>Homepage</strong>", which I have yet to finalise.</li>
+  <li>One of the tasks I have done is the start of a larger project, "Homepage", which I have yet to finalise.</li>
 </ul>
 
